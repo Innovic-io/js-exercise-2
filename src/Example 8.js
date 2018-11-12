@@ -95,9 +95,6 @@ Object.keys(animal).forEach(key => {
     console.log(`${key}: ${value1}`);
 });
 
-
-
-
 const Brend = {
     name : 'Samsung',
     year : 2015,
