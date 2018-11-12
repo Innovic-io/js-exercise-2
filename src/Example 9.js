@@ -5,5 +5,6 @@ a = '132'; // initialization
 
 const  b = '132'; // declaration and initialization
 
+
 console.log(a +' equally ' + b);
 
