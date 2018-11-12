@@ -32,13 +32,13 @@ let months = ['Jan', 'March', 'April', 'June'];
 
 console.log(months);
 /**
- * The first number shows wich field we are star (we start from the other)
- and the other shows whether we delete or not and (we delete 2 fields) and string shows what we can put on the array
- */
+ * array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+ * start - Index at which to start changing the array
+ * deleteCount - An integer indicating the number of old array elements to remove.
+ * item1, item2  - The elements to add to the array, beginning at the start index. If you don't specify any elements, splice() will only remove elements from the array */
 months.splice(1,2, 'Februar');
 
 console.log(months);
-
 months.splice(4,0, 'May');
 
 console.log(months);
