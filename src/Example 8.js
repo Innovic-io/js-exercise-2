@@ -79,10 +79,10 @@ console.log(findObj);
 
  console.log(findSubObj);
 
-// Initialize an object
+
 const animal = {
     name : 'Cat',
-    age : 23
+    color : 'black'
 };
 
 const keys = Object.keys(animal);
