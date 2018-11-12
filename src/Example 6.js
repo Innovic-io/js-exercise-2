@@ -8,7 +8,7 @@ console.log(newarray);
 
 let array2 = [3, 4, 7, 24];
 
-const newarray2= array2.map(x => x + x);
+const newarray2 = array2.map(x => x + x);
 
 console.log(newarray2);
 
@@ -27,3 +27,16 @@ console.log(array3);
 array1.slice(0, 2);
 
 console.log(array1.slice(0, 2));
+
+
+let found = array1.find(function(element){
+    return element > 6;
+});
+
+console.log(found);
+
+array1.unshift(4, 5);
+
+console.log(array1);
+
+
