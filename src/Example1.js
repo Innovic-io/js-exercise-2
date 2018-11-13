@@ -1,7 +1,7 @@
 // Example 1//
-let a;
+let a; //declaration
 
-a = 1;
+a = 1; // initialization
 
 console.log(a);
 
