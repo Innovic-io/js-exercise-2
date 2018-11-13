@@ -16,6 +16,7 @@ const speak = function() {
 };
 // we call the function //
 speak();
+
 // Passed as arguments to function //
 function sayHello() {
     return "Hello, ";
@@ -38,10 +39,13 @@ Now, we need to invoke sayHello function and its returned Anonymous Function. To
  */
 const myFunc = Hi();
 myFunc();
+
+
 // or Using double parentheses  //
-/*
+
 function Hi() {
-return function() {
-console.log("Hello!");
-Hi()();
-*/
+    return function () {
+        console.log("Hello!");
+    }
+}
+Hi()()
