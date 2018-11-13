@@ -25,9 +25,14 @@ person[2] = 46;
 
 person.push("Ivana");
 
+person.splice(0, 0, 'Marko');
+
+person.unshift('Mirko');
+
 let x = person.length;
 
 let y = person[0];
 
 console.log(x);
 console.log(y);
+console.log(person);
