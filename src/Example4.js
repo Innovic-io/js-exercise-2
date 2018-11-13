@@ -1,19 +1,18 @@
 // Example4 //
 
-let x;
+function Function3 (time) {
+    if (time < 10) {
+        console.log('G');
+    }
+    else if (10 < time && time < 20 ) {
+        console.log('Good evening');
+    }
+    else {
+        console.log('Good night');
+    }
+}
+Function3(13);
 
-let time = 15;
-
-if (time < 10) {
-    x = "Good morning";
-}
-else if (time < 20) {
-    x = "Good day";
-}
-else {
-    x = "Good evening";
-}
-console.log(x);
 
 let t = 20;
 
@@ -24,20 +23,9 @@ else{
     t = 'Its good!'
 }
 console.log(t);
- let y = Func(4, 3);
 
-function Func(a, b) {
-    return a * b;
-}
-console.log(y);
 
-if (y < 21){
-    y = 'Not good'
-}
-else{
-    y = 'Its good!'
-}
 let z = 15;
 console.log( z < 21 ? "Not good" : "sada");
 
-console.log(y);
+
