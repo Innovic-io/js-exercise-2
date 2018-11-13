@@ -1,5 +1,4 @@
 // Exmaple 6 //
-//
 let array1 = [1, 4, 9, 16];
 
 const newarray = array1.map(x => x * 2);
