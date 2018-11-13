@@ -1,15 +1,34 @@
-// Example 7 //
-let cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-
-let text = "";
-
+// Example 7
+let cars = ['BMW', 'Volvo', 'Saab', 'Ford', 'Fiat', 'Audi'];
+let text = '';
 let i;
 
-for (i = 0; i < cars.length; i++) {
-    text += cars[i] + "   ";
-}
 
+// for of, for in, array functions
+
+
+// for of (for array)
+/*
+* for (variable of iterable) {
+  statement
+}*/
+for( i of cars){
+    text += i + ' ';
+}
 console.log(text);
+
+//for in (for object)
+/*
+* for (variable in object) { ...
+}*/
+let cars1 = {a : 'BMW', b : 'Volvo', c : 'Saab', d : 'Ford' };
+let text2 = '';
+let j;
+
+for(j in cars1){
+    text2 += cars1[j] + ' ';
+}
+console.log(text2);
 
 let string = ["J","o", "c", "o"];
 
@@ -57,7 +76,7 @@ console.log(result);
 
 
 /*
- *creates a new strings that are drawn from a given string
+ *creates a new array that are drawn from a given string
  */
 
 console.log(Array.from("Marko"));
