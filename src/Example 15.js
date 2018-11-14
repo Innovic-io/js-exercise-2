@@ -27,6 +27,11 @@ const reducer = (acumulator, curentValue) => acumulator + curentValue
 
 
 console.log(array.reduce(reducer));
+
+
+let sum = array.filter( p1 => p1 > 14).map(y1 => y1 + y1).reduce(reducer);
+
+console.log(sum);
 /*
 // function forEach
 let t = array.forEach(function (elAr){
