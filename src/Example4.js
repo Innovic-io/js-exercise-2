@@ -1,5 +1,7 @@
 // Example4 //
 
+// TODO when you learn unit tests, refactor this if/else into tests
+
 function Function3 (time) {
     if (time < 10) {
         console.log('G');
