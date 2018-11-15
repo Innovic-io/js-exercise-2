@@ -64,3 +64,34 @@ let people2 = {lastName : 'Mirkovic', height : '201cm'};
 let mergePeople = {...people2, ...people1};
 
 console.log(mergePeople);
+
+
+/*
+// TODO few more tasks to consider
+const phone = {
+    name : 'Samsung',
+    year : 2015,
+    model : 'S3-Neo',
+    proccesor : '1.6 GHz'
+};
+
+const arrayOfNames = ['Mark', 'George', 'Ivana', 'Maja', 'Joco']
+
+I want to get name, year and model inline. How should I do this?
+for example I want to do this?
+I want to have
+const name, year, model
+such that  name === 'Samsung', year ==== 2015, model === 'S3-Neo'
+HINT:
+MAGIC = phone // DO NOT USE dot (phone.name...)
+
+I want to have three constants in such way that
+name1 === 'Mark'
+name2 === 'George'
+names = ['Ivana', 'Maja', 'Joco']
+
+you need to do it inline also
+MAGIC = arrayOfNames // DO NOT USE arrayOfNames[0] and such
+
+Make one function which can receive infinite number of elements and print them all
+ */
