@@ -1,4 +1,7 @@
 // Example 8 //
+// TODO what is difference between ==  and ===
+
+const util = require('util');
 
 let person = [
     {
@@ -71,6 +74,11 @@ const people = [
         }
         ];
 
+function print(){
+  console.log(util.inspect({people}, false, null));
+}
+print();
+
 let findObj = people.find(obj => obj.age == 14);
 
 console.log(findObj);
@@ -120,15 +128,11 @@ const Multy = Object.assign(name, details);
 
 console.log(Multy);
 
-/*
-* this is true, because the string value of '1' can easily be converted into the number value of 1.
-* */
+
+//this is true, because the string value of '1' can easily be converted into the number value of 1.
+
  console.log(1 == '1');
-/*
-* this is false, because the vaule is equally but type is not equally
- */
+
+//this is false, because the vaule is equally but type is not equally
+
 console.log(1 !== '1');
-
-
-
-
