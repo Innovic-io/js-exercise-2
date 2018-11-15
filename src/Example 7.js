@@ -1,4 +1,5 @@
 // Example 7
+// TODO what is difference between for in and for of?
 let cars = ['BMW', 'Volvo', 'Saab', 'Ford', 'Fiat', 'Audi'];
 let text = '';
 let i;
