@@ -26,6 +26,7 @@ person[2] = 46;
 person.push("Ivana");
 
 person.splice(0, 0, 'Marko');
+// TODO how we should push on the begining?
 
 person.unshift('Mirko');
 
