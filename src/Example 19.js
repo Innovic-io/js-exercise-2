@@ -1,24 +1,53 @@
-const pets = {
-    names: ['Baron', 'Chief', 'Axel'],
-    owner: 'Jason',
-    description: function(){
-        return this.names.map(function(pet){
-            console.log(`${this.owner}`);
-            return `${this.owner} knows an awesome dog named ${pet}.`
-        });
-    }
-};
+// Example 19
 
-console.log(pets.description());
+console.log('ARA');
 
-const pets1 = {
-    names: ['Baron', 'Chief', 'Axel'],
-    owner: 'Jason',
-    description: function(){
-        return this.names.map(pet => {
-            return `${this.owner} knows an awesome dog named ${pet}.`
-        });
-    }
-};
-console.log(pets1.description());
+setTimeout(function cd() {
+    console.log('Maaaa');
+}, 1000);
+
+console.log('Mareee');
+
+//
+
+ const odd = (number) => new Promise(((resolve, reject) => {
+     if (number%2 !== 0) {
+         return resolve('good');
+     }
+     return reject('not good')
+ }))
+
+odd(2)
+    .catch(val => console.log(2, val));   
+odd(3)
+    .then((val) => console.log('3', val));
+
+//
+
+     const odd1 =(a,b) => new Promise((resolve, reject) => {
+         if( b % 2 !== 0){
+             return resolve (a / b);
+         }
+         else {
+             return reject(a * b);
+         }
+
+     });
+odd1(1,7)
+    .then((x) => console.log(x));
+odd1(3,24)
+    .catch(x => console.log(x));
+
+let isMomhappy = false;
+
+// willGetNewPhone()
+
+
+
+
+
+
+
+
+
 
