@@ -1,5 +1,9 @@
 // Example 8 //
-// TODO what is difference between ==  and ===
+
+/*
+* Different between == and === :
+* 1. == askes that vaule are the same but and not type
+* 2. === asks that value and type are the same*/
 
 const util = require('util');
 
