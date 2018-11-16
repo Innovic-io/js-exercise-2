@@ -1,11 +1,11 @@
 // Example 20
-// TODO use arrow when possible
 
-function getNumberFunction () {
+
+const getNumberFunction  = () =>  {
     return Promise.resolve(4);
-}
+};
 getNumberFunction().then(res => console.log(res));
-//
+
 // async - return Promise
 async function getNumber () {
     return 4;
@@ -23,7 +23,7 @@ async function f () {
 }
 
 f();
-function resolveAfter2Secund () {
+const resolveAfter2Secund = () => {
     return new Promise(resolve => {
         setTimeout(() => resolve('Done'),1000)
     });
