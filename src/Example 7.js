@@ -1,8 +1,18 @@
 // Example 7
-// TODO what is difference between for in and for of?
+
+/*
+* 1.for of
+* for (variable of iterable) {
+  statement
+}
+return keys
+2. for in
+for (variable in object) { ...
+}
+return values */
 let cars = ['BMW', 'Volvo', 'Saab', 'Ford', 'Fiat', 'Audi'];
 let text = '';
-let i;
+
 
 
 // for of, for in, array functions
@@ -13,7 +23,7 @@ let i;
 * for (variable of iterable) {
   statement
 }*/
-for( i of cars){
+for( let i of cars){
     text += i + ' ';
 }
 console.log(text);
@@ -24,9 +34,9 @@ console.log(text);
 }*/
 let cars1 = {a : 'BMW', b : 'Volvo', c : 'Saab', d : 'Ford' };
 let text2 = '';
-let j;
 
-for(j in cars1){
+
+for(let j in cars1){
     text2 += cars1[j] + ' ';
 }
 console.log(text2);
