@@ -1,6 +1,6 @@
 // Example 14 spread array
 //1
-
+/*
 function Func (a, b, c) {
     console.log(a);
     console.log(b);
@@ -64,10 +64,26 @@ let people2 = {lastName : 'Mirkovic', height : '201cm'};
 let mergePeople = {...people2, ...people1};
 
 console.log(mergePeople);
+*/
+const phone ={
+    name : 'Samsung',
+    year : 2015,
+    proccesor : '1.6GHz'
+};
+const {name: first_name,year,proccesor} = phone; //processor = phone.processor
+console.log( first_name === "Samsung",  year === 2015, proccesor === "1.6GHz");
+//
+const a =['Mark', 'George', 'Ivana', 'Maja','Joco'];
+let [first, second, ...rest]= a;
 
-
+console.log(first, second , rest);
+//
+function g (...args) {
+    console.log(args);
+}
+g(1,3,4,5,7,8,9);
 /*
-// TODO few more tasks to consider
+
 const phone = {
     name : 'Samsung',
     year : 2015,
@@ -93,5 +109,4 @@ names = ['Ivana', 'Maja', 'Joco']
 you need to do it inline also
 MAGIC = arrayOfNames // DO NOT USE arrayOfNames[0] and such
 
-Make one function which can receive infinite number of elements and print them all
  */
