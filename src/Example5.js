@@ -1,4 +1,5 @@
 // Example 5 //
+/*
 let numbers = [1, 2, 3];
 
 console.log(numbers);
@@ -14,7 +15,7 @@ console.log(numbers);
 let last = numbers[numbers.length - 1];
 
 console.log(last);
-
+*/
 let person = [];
 
 person[0] = "Joco";
@@ -26,10 +27,14 @@ person[2] = 46;
 person.push("Ivana");
 
 person.splice(0, 0, 'Marko');
-// TODO how we should push on the begining?
 
-person.unshift('Mirko');
 
+person.unshift('Maja');
+
+console.log(person);
+
+
+/*
 let x = person.length;
 
 let y = person[0];
@@ -37,3 +42,4 @@ let y = person[0];
 console.log(x);
 console.log(y);
 console.log(person);
+*/
