@@ -38,16 +38,17 @@ odd1(1,7)
 odd1(3,24)
     .catch(x => console.log(x));
 
-let isMomhappy = false;
-
-// willGetNewPhone()
-
-
-
-
-
-
-
-
-
-
+const name = (name1) => {
+    odd1(1, 2);
+    return Promise.resolve(name1)
+}
+const name2 = (name1) => {
+    return odd1(1, 2);
+}
+const name3 = async (name1) => {
+    odd1(1, 2);
+    return name1
+}
+const name4 = async (name1) => {
+    return await odd1(1, 2);
+}
