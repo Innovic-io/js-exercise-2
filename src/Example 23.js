@@ -32,7 +32,7 @@ obj[x] = 3;
 
 console.log(obj);
 
-const y = Symbol()
+const y = Symbol();
 obj[y] = 13;
 
 console.log(obj);

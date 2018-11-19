@@ -28,8 +28,8 @@ array1.slice(0, 2);
 console.log(array1.slice(0, 2));
 
 
-let found = array1.find(function(element){
-    return element > 6;
+let found = array1.find(function (element) {
+  return element > 6;
 });
 
 console.log(found);

@@ -5,13 +5,13 @@ const k = `"'`;
 const i = '"`';
 const s = "'`";
 
-console.log(s, k,  i);
+console.log(s, k, i);
 
 
 const par = 'sdadasd' +
-    'sdadasda' +
-    'dasdasda' +
-    'dssad' +  'dasdsas' + 'sdada';
+  'sdadasda' +
+  'dasdasda' +
+  'dssad' + 'dasdsas' + 'sdada';
 
 const par1 = `dsadas
 sdadasdas

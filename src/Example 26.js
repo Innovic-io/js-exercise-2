@@ -8,7 +8,7 @@
 
 //Sending date
 
-const myObj = {name: "John", age: 31, city: "New York"};
+const myObj = { name: "John", age: 31, city: "New York" };
 const myJSON = JSON.stringify(myObj);
 window.location = "demo_json.php?x=" + myJSON;
 
@@ -20,6 +20,6 @@ document.getElementById("demo").innerHTML = myObj.name;
 
 //Storing data
 
-myObj = {name: "John", age: 31, city: "New York"};
+myObj = { name: "John", age: 31, city: "New York" };
 myJSON = JSON.stringify(myObj);
 localStorage.setItem("testJSON", myJSON);

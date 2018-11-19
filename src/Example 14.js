@@ -65,23 +65,25 @@ let mergePeople = {...people2, ...people1};
 
 console.log(mergePeople);
 */
-const phone ={
-    name : 'Samsung',
-    year : 2015,
-    proccesor : '1.6GHz'
+const phone = {
+  name: 'Samsung',
+  year: 2015,
+  proccesor: '1.6GHz'
 };
-const {name: first_name,year,proccesor} = phone; //processor = phone.processor
-console.log( first_name === "Samsung",  year === 2015, proccesor === "1.6GHz");
+const { name: first_name, year, proccesor } = phone; //processor = phone.processor
+console.log(first_name === "Samsung", year === 2015, proccesor === "1.6GHz");
 //
-const a =['Mark', 'George', 'Ivana', 'Maja','Joco'];
-let [first, second, ...rest]= a;
+const a = ['Mark', 'George', 'Ivana', 'Maja', 'Joco'];
+let [first, second, ...rest] = a;
 
-console.log(first, second , rest);
+console.log(first, second, rest);
+
 //
 function g (...args) {
-    console.log(args);
+  console.log(args);
 }
-g(1,3,4,5,7,8,9);
+
+g(1, 3, 4, 5, 7, 8, 9);
 /*
 
 const phone = {

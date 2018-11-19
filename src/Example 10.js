@@ -13,7 +13,7 @@ console.log(a);
 */
 var b = 9;
 
-var b = 12
+var b = 12;
 
 b = 10;
 
@@ -29,14 +29,14 @@ c = 14;
 console.log(c);
 */
 
-for(var i = 0; i < 10; i++){
-    console.log(i);
+for (var i = 0; i < 10; i++) {
+  console.log(i);
 }
 console.log(i);
 
 //if it is declared inside the block, it will be not defined outside the block.
-for(let j = 0; j < 10; j++){
-    console.log(j);
+for (let j = 0; j < 10; j++) {
+  console.log(j);
 }
 //console.log(j);
 
