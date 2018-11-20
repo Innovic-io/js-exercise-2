@@ -10,8 +10,8 @@ const First = {
 };
 
 const Second = {
-    name: 'Marko',
-    age: 45,
+  age: 45,
+  name: 'Marko',
     surname: 'Mitrovic'
 };
 const Third = {
@@ -20,6 +20,8 @@ const Third = {
     surname: 'Mitrovic',
     eysColor: 'blue'
 };
+
+const getPromisfy = (number) => new Promise((resolve) => setTimeout(() => resolve(number), 2000));
 
 assert.equal('1',1);
 assert.equal(1,1);
@@ -38,6 +40,8 @@ assert.strictEqual('1','1');
 assert.strictEqual(false, false);
 assert.strictEqual(true, true);
 assert.strictEqual(undefined, undefined);
+getPromisfy(3).then((variable)=> assert.strictEqual(variable, 3))
+
 assert.notStrictEqual(true, 1);
 assert.notStrictEqual(1,'1');
 assert.notStrictEqual(First,Second);

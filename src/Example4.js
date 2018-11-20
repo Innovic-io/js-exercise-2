@@ -1,16 +1,22 @@
 // Example4 //
 
 // TODO when you learn unit tests, refactor this if/else into tests
+const assert = require('assert');
+class myUnitTest {
 
-function Function3 (time) {
+}
+
+const  Function3 = (time) => {
     if (time < 10) {
         console.log('G');
-    }
-    else if (10 < time && time < 20 ) {
+       return 'less than 10';
+    } else if (time < 20 ) {
         console.log('Good evening');
-    }
-    else {
+        return 'between';
+    } else {
         console.log('Good night');
+        return 'higher';
+
     }
 }
 Function3(13);
@@ -31,3 +37,6 @@ let z = 15;
 console.log( z < 21 ? "Not good" : "sada");
 
 
+assert.equal(Function3(9), 'less than 10');
+//assert.equal(Function3(10), );
+//assert.equal(Function3(15),'' );
