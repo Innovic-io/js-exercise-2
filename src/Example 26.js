@@ -8,7 +8,7 @@
 
 //Sending date
 
-const myObj = {name: "John", age: 31, city: "New York"};
+const myObj = { name: "John", age: 31, city: "New York" };
 const myJSON = JSON.stringify(myObj);
 
 //Recieved data
@@ -36,40 +36,52 @@ let text = '{ "employees" : [' +
     '{ "firstName":"Anna" , "lastName":"Smith" },' +
     '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 const obj = JSON.parse(text);
-console.log(obj);
+//console.log(obj);
 let JSoN = {
     "notifications": {
         "total": 3,
         "enabled": true
     },
-    "events": [{
-        "success": {
-            "objectId": "5bdd6de4a9eb430b562c43b3",
-            "clientId": "41801257-6d69-42e2-9056-07dc4f1e3d01",
-        }
-    }, {
-        "fail": {
-            "objectId": "5bdd6de16652230b562c43b3",
-            "clientId": "3a3720cd-e2a6-4ce5-94c6-6a0164ffbca2"
-        }
-    }, {
-        "pending": {
-            "objectId": "5bd56de4a9eb430b562c43b3",
-            "clientId": "009790cf-bcd7-4e2c-bd01-a2f9af5cc180"
-        }
-    }]
+    "events": [
+        {
+            "success": {
+                "objectId": "5bdd6de4a9eb430b562c43b3",
+                "clientId": "41801257-6d69-42e2-9056-07dc4f1e3d01",
+            }
+        },
+        {
+            "fail": {
+                "objectId": "5bdd6de16652230b562c43b3",
+                "clientId": "3a3720cd-e2a6-4ce5-94c6-6a0164ffbca2"
+            }
+        },
+        {
+            "pending": {
+                "objectId": "5bd56de4a9eb430b562c43b3",
+                "clientId": "009790cf-bcd7-4e2c-bd01-a2f9af5cc180"
+            }
+        }]
 };
-const b = () => {
-    for (let i of JSoN.events){
-       // Object.assign(JSoN.events[i],   {"idfa" : JSoN.events[i].success.objectId + JSoN.events[0].success.clientId});
 
+const add = () => {
+    let ap = JSoN['events'];
+    for (let i in ap) {
+        //   console.log(ap[i]);
+        for (let j in ap[i]) {
+            // console.log(ap[i][j]);
+            let obj = ap[i][j];
+            Object.assign(obj, { "idfa": obj.objectId + obj.clientId });
+            console.log(obj)
+        }
     }
 };
-const a =() =>{
-   let v = JSoN.events.map((x) => x );
-    console.log(v);
+const a = () => {
+    JSoN.events.map((x) => x);
+    add();
+
 };
 a();
+
 //Object.assign(JSoN.events[0].success, {"idfa" : JSoN.events[0].success.objectId + JSoN.events[0].success.clientId});
 //console.log(JSoN.events);
 
