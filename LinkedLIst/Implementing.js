@@ -1,0 +1,14 @@
+const LinkedList = require('./LinkedList');
+let ll = new LinkedList();
+ll.add(12);
+ll.add(43);
+ll.add(76);
+ll.add(22).add(55);
+ll.addAt(1, 2);
+ll.removeEL(22);
+ll.removeElAt(3);
+ll.printList();
+ll.printEl(1);
+let ll2 = new LinkedList();
+ll2.add(12).add(43).add(1).add(55);
+ll2.printList();
