@@ -5,6 +5,6 @@ a = 1; // initialization
 
 console.log(a);
 
-let d  = 10;
+let d = 10;
 
 console.log(d);

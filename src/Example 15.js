@@ -9,39 +9,37 @@
 let array = [3, 5, 12, 87, 33];
 
 // function map
-let x = array.map( y => y + y);
+let x = array.map(y => y + y);
 
 console.log(x);
 
 // function filter
 
-let u = array.filter(p => p > 11)
+let u = array.filter(p => p > 11);
 
 console.log(u);
 
 //finction reduce
 
-const reducer = (acumulator, curentValue) => acumulator + curentValue
-
-
+const reducer = (acumulator, curentValue) => acumulator + curentValue;
 
 
 console.log(array.reduce(reducer));
 
 
-let sum = array.filter( p1 => p1 > 2).map(y1 => y1 + y1).reduce(reducer)/2;
+let sum = array.filter(p1 => p1 > 2).map(y1 => y1 + y1).reduce(reducer) / 2;
 
 console.log(sum);
 
 // function forEach
-let t = array.forEach(function (elAr){
-    console.log(elAr)
+let t = array.forEach(function (elAr) {
+  console.log(elAr);
 });
 
 
 // function sort
-array.sort(function (el1,el2) {
-        return el1 - el2;
+array.sort(function (el1, el2) {
+  return el1 - el2;
 });
 
 console.log(array);

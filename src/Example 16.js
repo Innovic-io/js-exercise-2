@@ -1,27 +1,30 @@
 // Example 16
 
-function sayHello() {
-    return "Hello, ";
+function sayHello () {
+  return "Hello, ";
 }
-function greeting(helloMessage, name) {
-    console.log(helloMessage() + name);
+
+function greeting (helloMessage, name) {
+  console.log(helloMessage() + name);
 }
+
 greeting(sayHello, "JavaScript!");
 
 function add (a, b) {
-    return a + b;
+  return a + b;
 }
+
 function subrtact (a, b) {
-    return a - b;
+  return a - b;
 }
 
 function myFunc (func) {
-    return func;
+  return func;
 }
 
-console.log(myFunc(add(3,5)));
+console.log(myFunc(add(3, 5)));
 
-console.log(myFunc(subrtact(10,7)));
+console.log(myFunc(subrtact(10, 7)));
 
 /*
 function myFunction(param){
