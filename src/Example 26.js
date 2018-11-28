@@ -14,7 +14,7 @@ const myJSON = JSON.stringify(myObj);
 //Recieved data
 
 const myJSON2 = '{"name":"John", "age":31, "city":"New York"}';
-const myObj2 = JSON.parse(myJSON);
+const myObj2 = JSON.parse(myJSON2);
 
 /*Storing data
 
@@ -64,6 +64,21 @@ let JSoN = {
 };
 
 const add = () => {
+    let objects;
+    objects = JSoN.events.map((element) => {
+        element[Object.keys(element)]["idfa"] = element[Object.keys(element)]["objectId"] + element[Object.keys(element)]["clientId"];
+
+        return element;
+    });
+
+    return objects;
+};
+
+
+console.log(add());
+
+/*
+const add = () => {
     let ap = JSoN['events'];
     for (let i in ap) {
         //   console.log(ap[i]);
@@ -75,12 +90,10 @@ const add = () => {
         }
     }
 };
-const a = () => {
-    JSoN.events.map((x) => x);
-    add();
+add();
+*/
 
-};
-a();
+
 
 //Object.assign(JSoN.events[0].success, {"idfa" : JSoN.events[0].success.objectId + JSoN.events[0].success.clientId});
 //console.log(JSoN.events);
