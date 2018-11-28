@@ -1,6 +1,6 @@
 // Example 14 spread array
 //1
-/*
+
 function Func (a, b, c) {
     console.log(a);
     console.log(b);
@@ -64,7 +64,7 @@ let people2 = {lastName : 'Mirkovic', height : '201cm'};
 let mergePeople = {...people2, ...people1};
 
 console.log(mergePeople);
-*/
+
 const phone ={
     name : 'Samsung',
     year : 2015,

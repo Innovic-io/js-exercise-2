@@ -11,7 +11,7 @@ greeting(sayHello, "JavaScript!");
 function add (a, b) {
     return a + b;
 }
-function subrtact (a, b) {
+function sub (a, b) {
     return a - b;
 }
 
@@ -21,8 +21,20 @@ function myFunc (func) {
 
 console.log(myFunc(add(3,5)));
 
-console.log(myFunc(subrtact(10,7)));
-
+console.log(myFunc(sub(10,7)));
+function mul (a, b){
+    return a * b;
+}
+function div (a,b) {
+    return a / b;
+}
+function calculator (a, b, operationFunction) {
+    return operationFunction(a,b);
+}
+console.log(calculator(2,6,add));
+console.log(calculator(2,6,mul));
+console.log(calculator(2,6,sub));
+console.log(calculator(2,6,div));
 /*
 function myFunction(param){
   console.log('Hi, myFunction here!');
@@ -40,6 +52,7 @@ myOtherFunction(myFunction);
 // I've received a parameter:  Hi myFunction, myOtherFunction here!
 
 */
+
 
 /*
 

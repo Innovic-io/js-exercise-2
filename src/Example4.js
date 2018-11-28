@@ -1,6 +1,5 @@
 // Example4 //
 
-// TODO when you learn unit tests, refactor this if/else into tests
 const assert = require('assert');
 class myUnitTest {
 
@@ -18,7 +17,7 @@ const  Function3 = (time) => {
         return 'higher';
 
     }
-}
+};
 Function3(13);
 
 

@@ -1,14 +1,13 @@
 // Example 11 //
 
-/* First-class functions are just like primitives and objects.
-*functions can be:
-
-Assigned to variables
-
-Returned from functions
-
-Passed as arguments to functions
-*/
+// First-class functions are just like primitives and objects.
+//functions can be:
+//functions can be:
+//Assigned to variables
+//Assigned to variables
+//Returned from functions
+//Returned from functions
+//Passed as arguments to functions
 // Assigned to variables //
 
 const speak = function() {

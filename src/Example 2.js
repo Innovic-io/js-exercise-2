@@ -1,4 +1,4 @@
-// Exampl 2 //
+// Example 2 //
 let b  = 6;
 
 let c;

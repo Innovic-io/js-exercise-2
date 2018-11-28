@@ -15,7 +15,10 @@ let text  = 'The temperature is' + ' ' + a + ' ' + 'Celsius';
 console.log(text);
 
 
+/**
+ * @return {number}
+ */
 function Funct (a, b) {
-    return(a * b)
+    return(a * b);
 }
 console.log(Funct(5,6));
