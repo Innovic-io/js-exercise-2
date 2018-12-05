@@ -1,10 +1,10 @@
 // Example 16
-
-function sayHello() {
-    return "Hello, ";
+/*
+function sayHello(name) {
+    return "Hello, " + name;
 }
 function greeting(helloMessage, name) {
-    console.log(helloMessage() + name);
+    console.log(helloMessage(name));
 }
 greeting(sayHello, "JavaScript!");
 
@@ -35,7 +35,8 @@ console.log(calculator(2,6,add));
 console.log(calculator(2,6,mul));
 console.log(calculator(2,6,sub));
 console.log(calculator(2,6,div));
-/*
+
+
 function myFunction(param){
   console.log('Hi, myFunction here!');
   console.log('I\'ve received a parameter: ', param);
@@ -51,9 +52,58 @@ myOtherFunction(myFunction);
 // Hi, myFunction here!
 // I've received a parameter:  Hi myFunction, myOtherFunction here!
 
+
+
+function first(value) {
+    return (value + 2);
+}
+function second(value) {
+    return (value + 2);
+}
+function third(value) {
+    return (value + 2);
+}
+function f (number) {
+    return number
+}
 */
+function f1 (value, callback) {
+    return callback(value + 2, false)
+}
+function f2 (value, callback) {
+    return callback(value + 2, false)
+}
+function f3 (value, callback) {
+    return callback(value + 2, false)
+}
 
 
+
+    f1(2, function (firstResult, err) {
+        if (!err) {
+            console.log(firstResult)
+        }
+        f2(firstResult, function (secondResult, err) {
+            if (!err) {
+                console.log(secondResult)
+            }
+            f3(secondResult, function (thirdResult, err) {
+                if (!err) {
+                    console.log(thirdResult);
+                }
+            })
+        })
+    });
+
+/*
+const promise = new Promise((resolve,reject) => {
+    resolve(2);
+});
+
+
+promise.then(first).then(second).then(third).then((response) => {
+    console.log(response);
+});
 /*
 
 this.a = 'a';

@@ -70,8 +70,8 @@ const phone ={
     year : 2015,
     proccesor : '1.6GHz'
 };
-const {name: first_name,year,proccesor} = phone; //processor = phone.processor
-console.log( first_name === "Samsung",  year === 2015, proccesor === "1.6GHz");
+const ma = {name: first_name,year:your_year,proccesor} = phone; //processor = phone.processor
+console.log( first_name === "Samsung", your_year === 2015, proccesor === "1.6GHz");
 //
 const a =['Mark', 'George', 'Ivana', 'Maja','Joco'];
 let [first, second, ...rest]= a;

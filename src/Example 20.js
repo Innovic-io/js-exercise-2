@@ -37,3 +37,16 @@ async function asyncCall () {
     console.log(rest);
 }
 asyncCall();
+function asyncFunction(bool) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if(bool) {
+                resolve('Promise resolved after 5 seconds');
+            } else {
+                reject('Promise rejected after 5 seconds');
+            }
+        }, 5000);
+    });
+}
+
+
