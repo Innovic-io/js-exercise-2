@@ -29,14 +29,14 @@ const people = {
     age: 13,
 };
 const sendToJson = JSON.stringify(people);
-console.log(sendToJson);
+// console.log(sendToJson);
 
 let text = '{ "employees" : [' +
     '{ "firstName":"John" , "lastName":"Doe" },' +
     '{ "firstName":"Anna" , "lastName":"Smith" },' +
     '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 const obj = JSON.parse(text);
-//console.log(obj);
+// console.log(obj);
 let JSoN = {
     "notifications": {
         "total": 3,
@@ -63,19 +63,58 @@ let JSoN = {
         }]
 };
 
-const add = () => {
-    let objects;
-    objects = JSoN.events.map((element) => {
+
+/*
+
+const add = (ob) => {
+
+    ob = JSoN.events.forEach((element) => {
         element[Object.keys(element)]["idfa"] = element[Object.keys(element)]["objectId"] + element[Object.keys(element)]["clientId"];
 
         return element;
     });
 
-    return objects;
+    return ob;
 };
 
-
+add(JSoN);
 console.log(add());
+console.log(JSoN.events);
+*/
+const deepCopy = (obj)=> JSON.parse(JSON.stringify(obj));
+
+const res = Object.assign({}, JSoN, {
+    events: JSoN.events
+        .map((element) => Object.assign({}, ...Object.keys(element)
+            .map((key) => Object.assign({}, element,
+                { [key]: { ...element[key], idfa: element[key].objectId + element[key].clientId } })
+            ))
+        )
+});
+
+console.log('split9');
+console.log(res.events);
+console.log('split');
+console.log(JSoN.events);
+console.log('split2');
+
+let object2 = Object.assign({}, JSoN);
+JSoN.events.map((value) => {
+    let result = value[Object.keys(value)]['objectId'] + value[Object.keys(value)]['clientId'];
+    //console.log(s);
+    object2.events.forEach(element => {
+
+    })
+  //  object2
+
+    /*
+    object2.events = Object.assign({'idfa': s}, JSoN.events.map((el)=>{
+
+    }))
+    */
+   console.log(object2.events)
+});
+
 
 /*
 const add = () => {
@@ -85,13 +124,12 @@ const add = () => {
         for (let j in ap[i]) {
             // console.log(ap[i][j]);
             let obj = ap[i][j];
-            Object.assign(obj, { "idfa": obj.objectId + obj.clientId });
+            Object.assign( obj, { "idfa": obj.objectId + obj.clientId });
             console.log(obj)
         }
     }
 };
 add();
-*/
 
 
 
